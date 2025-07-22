@@ -8,7 +8,7 @@ pipeline{
         stage('Activating virtual env'){
             steps{
                 sh 'python -m venv .venv'
-                sh 'source .venv/Scripts/activate'
+                sh '.venv/Scripts/activate'
             }
         }
         stage('Installing Requirements'){
