@@ -17,7 +17,7 @@ pipeline{
         }
         stage('Running Python File'){
             steps{
-                sh 'venv/bin/python script.py'
+                sh '.venv/bin/python script.py'
             }
         }
     }
