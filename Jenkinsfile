@@ -5,11 +5,6 @@ pipeline{
         password(name:'AWS_SECRET_KEY', defaultValue:'',description:'Enter AWS Secret Key')
     }
     stages{
-        stage('Activation of Virtual Env'){
-            steps{
-                sh './venv/Scripts/activate'
-            }
-        }
         stage('Installing Requirements'){
             steps{
                 sh 'pip install boto3'
