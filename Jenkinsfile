@@ -12,7 +12,7 @@ pipeline{
         }
         stage('Installing Requirements'){
             steps{
-                sh 'pip install boto3'
+                sh './venv/bin/pip install boto3'
             }
         }
         stage('Running Python File'){
